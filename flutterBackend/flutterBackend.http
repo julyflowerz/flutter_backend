@@ -1,0 +1,6 @@
+@flutterBackend_HostAddress = http://localhost:5168
+
+GET {{flutterBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
