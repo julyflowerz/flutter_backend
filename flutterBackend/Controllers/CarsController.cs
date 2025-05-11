@@ -34,15 +34,15 @@ namespace flutterBackend.Controllers
                     cars.Add(new Car
                     {
                         Id = Convert.ToInt32(reader["id"]),
-                        Name = reader["name"]?.ToString(),
-                        Make = reader["make"]?.ToString()
+                        Name = reader["name"].ToString(),
+                        Make = reader["make"].ToString(),
+                        Sprite = reader["sprite"].ToString()
                     });
                 }
-
-                reader.Close();
             }
 
             return Ok(cars);
         }
     }
+
 }
