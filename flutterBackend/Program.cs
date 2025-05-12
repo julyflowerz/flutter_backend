@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// ? Add this line to bind to all IPs
+//builder.WebHost.UseUrls("http://localhost:7066");
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
